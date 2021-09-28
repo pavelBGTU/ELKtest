@@ -1,0 +1,20 @@
+---
+## Default Elasticsearch configuration from Elasticsearch base image.
+## https://github.com/elastic/elasticsearch/blob/master/distribution/docker/src/docker/config/elasticsearch.yml
+
+node.name: es-node1
+node.roles: [ master, data ]
+
+cluster.name: "docker-cluster"
+network.host: 0.0.0.0
+
+## X-Pack settings
+## https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-xpack.html
+# если мы хотим триальную 30дневную версию, ставим параметр trial вместо basic
+xpack.license.self_generated.type: basic
+xpack.security.enabled: true
+xpack.monitoring.collection.enabled: true
+#xpack.security.transport.ssl.enabled: true
+#xpack.security.transport.ssl.verification_mode: full
+#xpack.security.transport.ssl.keystore.path: es-node01-cert.p12
+#xpack.security.transport.ssl.truststore.path: elastic-stack-ca.p12
