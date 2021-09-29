@@ -14,6 +14,9 @@ services:
       - type: volume
         source: elasticsearch
         target: /usr/share/elasticsearch/data
+      - type: volume
+        source: certs
+        target: /usr/share/elasticsearch/config/certificates        
     ports:
       - "9200:9200"
       - "9300:9300"
