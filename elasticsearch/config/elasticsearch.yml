@@ -6,7 +6,7 @@ node.name: es-node1
 node.roles: [ master, data ]
 
 cluster.name: "docker-cluster"
-network.host: bgtushko.ru
+network.host: 127.0.0.1
 
 ## X-Pack settings
 ## https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-xpack.html
