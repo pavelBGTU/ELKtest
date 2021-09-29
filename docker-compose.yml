@@ -63,6 +63,9 @@ services:
         source: ./kibana/config/kibana.yml
         target: /usr/share/kibana/config/kibana.yml
         read_only: true
+      - type: volume
+        source: certs
+        target: /etc/kibana/config/certs/
     ports:
       - "5601:5601"
     networks:
