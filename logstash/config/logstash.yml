@@ -12,3 +12,4 @@ xpack.monitoring.elasticsearch.hosts: [ "http//127.0.0.1:9200" ]
 xpack.monitoring.enabled: true
 xpack.monitoring.elasticsearch.username: elastic
 xpack.monitoring.elasticsearch.password: sberich
+xpack.monitoring.elasticsearch.ssl.certificate_authority: /etc/logstash/config/certs/ca.crt
